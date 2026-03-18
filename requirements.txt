@@ -1,0 +1,6 @@
+requests==2.31.0
+fhir.resources==7.1.0
+pydantic==2.6.1
+python-dateutil==2.9.0
+urllib3==2.2.1
+certifi==2024.2.2

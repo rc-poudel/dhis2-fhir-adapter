@@ -109,12 +109,14 @@ TEI represents a **person/patient** in DHIS2.
 
 ### FHIR → TEI Mapping
 
-| FHIR Field        | DHIS2 Field           |
-| ----------------- | --------------------- |
-| Patient.id        | trackedEntityInstance |
-| Patient.name      | Attribute (Name)      |
-| Patient.gender    | Attribute (Gender)    |
-| Patient.birthDate | Attribute (DOB)       |
+| FHIR Field                  | DHIS2 Field                  | Description                           |
+|------------------------------|------------------------------|---------------------------------------|
+| Patient.id                   | trackedEntityInstance        | Unique identifier of the patient TEI  |
+| Patient.name[0].given[0]     | Attribute (First Name)       | Patient’s first/given name            |
+| Patient.name[0].family       | Attribute (Last Name)        | Patient’s family/last name            |
+| Patient.gender               | Attribute (Gender)           | Patient gender (male/female/other)   |
+| Patient.birthDate            | Attribute (DOB)              | Date of birth (YYYY-MM-DD)            |
+| Patient.identifier[n].value  | Attribute (Identifier)       | Any additional identifiers            |
 
 ### Example TEI Payload
 

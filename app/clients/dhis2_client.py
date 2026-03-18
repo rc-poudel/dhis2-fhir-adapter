@@ -49,7 +49,8 @@ def get_events():
 
     params = {
         "ouMode": "ACCESSIBLE", 
-        "paging": "false",
+        # "paging": "false",
+        "pageSize": 2,
         "order": "occurredAt:desc",
         "fields": "event,trackedEntityInstance,program,occurredAt,dataValues[dataElement,value]"
     }
